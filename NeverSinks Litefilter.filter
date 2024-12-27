@@ -74,6 +74,7 @@ BaseType == "Gold"
 SetTextColor 180 180 180
 SetBorderColor 0 0 0 255
 SetBackgroundColor 0 0 0 180
+PlayEffect Orange Temp
 
 #--------------------------
 # Uncut Gems
@@ -112,17 +113,18 @@ MinimapIcon 1 Cyan Triangle
 SetFontSize 40
 
 # Gems up to level 18 in maps don't get a special highlight
-Show
-ItemLevel <= 18
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
+#Show
+#ItemLevel <= 18
+#BaseType "Uncut Skill Gem"
+#SetTextColor 20 240 240
+#SetBorderColor 20 240 240
+#SetFontSize 35
 
 Show
 BaseType "Uncut Support Gem"
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
+PlayEffect Cyan
 SetFontSize 35
 
 # Level 19 gems and up in maps get a special highlight
@@ -199,10 +201,10 @@ PlayEffect Cyan Temp
 # Scroll of Wisdom High Level Hiding
 #--------------------------
 
-Hide
-BaseType "Scroll of Wisdom"
-AreaLevel >= 65
-Rarity <= Magic
+#Hide
+#BaseType "Scroll of Wisdom"
+#AreaLevel >= 65
+#Rarity <= Magic
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -293,6 +295,7 @@ AreaLevel >= 70
 Class "Currency"
 BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
 SetTextColor 220 190 132
+PlayEffect Cyan
 SetFontSize 35
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
@@ -300,6 +303,7 @@ Show
 Class "Currency"
 BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
 SetTextColor 220 190 132
+PlayEffect Cyan
 MinimapIcon 2 Grey Circle
 SetFontSize 35
 
@@ -368,6 +372,7 @@ BaseType "Waystone"
 Rarity <= Rare
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
+PlayEffect Cyan
 SetFontSize 35
 
 Show
@@ -377,6 +382,7 @@ BaseType "Waystone"
 Rarity <= Rare
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
+PlayEffect Cyan
 SetFontSize 35
 
 Show
@@ -409,11 +415,13 @@ MinimapIcon 1 Yellow Diamond
 Show
 Rarity Normal
 Class "Rings" "Amulets" "Belts"
+PlayEffect Cyan
 SetFontSize 40
 
 Show
 Class "Rings" "Amulets" "Belts"
 Rarity Magic
+PlayEffect Cyan
 SetFontSize 40
 
 #--------------------------
@@ -424,24 +432,28 @@ Show
 Sockets > 0
 Rarity Normal
 SetBorderColor 200 200 200
+PlayEffect Cyan
 SetFontSize 35
 
 Show
 Quality > 0
 Rarity Normal
 SetBorderColor 200 200 200
+PlayEffect Cyan
 SetFontSize 35
 
 Show
 Sockets > 0
 Rarity Magic
 SetBorderColor 0 0 200
+PlayEffect Cyan
 SetFontSize 35
 
 Show
 Quality > 0
 Rarity Magic
 SetBorderColor 0 0 200
+PlayEffect Cyan
 SetFontSize 35
 
 #--------------------------
