@@ -57,24 +57,27 @@ Show
 AreaLevel >= 70
 StackSize >= 1000
 BaseType == "Gold"
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayEffect Orange Temp
+SetTextColor 216 145 24
+SetBorderColor 189 36 36
+PlayEffect Orange
+SetFontSize 32
 
 Show
 AreaLevel < 70
 StackSize >= 500
 BaseType == "Gold"
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayEffect Orange Temp
+SetTextColor 216 145 24
+SetBorderColor 189 36 36
+PlayEffect Orange
+SetFontSize 32
 
 Show
 BaseType == "Gold"
-SetTextColor 180 180 180
-SetBorderColor 0 0 0 255
-SetBackgroundColor 0 0 0 180
-PlayEffect Orange Temp
+SetTextColor 216 145 24
+SetBorderColor 189 36 36
+#SetBackgroundColor 0 0 0 180
+PlayEffect Orange
+#SetFontSize 40
 
 #--------------------------
 # Uncut Gems
